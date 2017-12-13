@@ -16,8 +16,8 @@ class User
   end
 
   def tell(user, joke)
-    user.learn(joke)
     @jokes << joke
+    user.learn(joke)
   end
 
   def perform_routine_for(user, joke = @jokes)
